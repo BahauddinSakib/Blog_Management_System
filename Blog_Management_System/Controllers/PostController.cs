@@ -118,6 +118,25 @@ namespace Blog_Management_System.Controller
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        //Count Comment
+
+        [HttpGet]
+        [Route("api/comments/commenter/{commentedBy}/count")]
+        public HttpResponseMessage GetCommentCountByUser(string commentedBy)
+        {
+            try
+            {
+                int count = PostService.GetCommentCountByUser(commentedBy);
+                return Request.CreateResponse(HttpStatusCode.OK, new 
+                { User_name = commentedBy,
+                  TotalCommentCount = count });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
     }
 }
 

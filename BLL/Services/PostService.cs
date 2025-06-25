@@ -12,6 +12,7 @@ namespace BLL.Services
 {
     public class PostService
     {
+        //Get data
         public static List<PostDTO> Get()
         {
             var data = DataAccessFactory.PostData().Read();
@@ -25,6 +26,7 @@ namespace BLL.Services
             return mapped;
 
         }
+        //Get10 data
         public List<PostDTO>Get10()
         {
             var data = DataAccessFactory.PostData().Read().Take(10).ToList();
@@ -49,6 +51,7 @@ namespace BLL.Services
             return mapped;
 
         }
+        //Create
         public bool Create(PostDTO post)
         {
             var cfg = new MapperConfiguration(c => c.CreateMap<PostDTO, Post>());
@@ -57,7 +60,7 @@ namespace BLL.Services
 
             return DataAccessFactory.PostData().Create(postEntity); 
         }
-
+        //Update
         public bool Update(PostDTO post)
         {
             var cfg = new MapperConfiguration(c => c.CreateMap<PostDTO, Post>());
@@ -66,7 +69,7 @@ namespace BLL.Services
 
             return DataAccessFactory.PostData().Update(postEntity); 
         }
-
+        //Delete
         public bool Delete(int id)
         {
             return DataAccessFactory.PostData().Delete(id); 
@@ -83,6 +86,15 @@ namespace BLL.Services
             var mapper = new Mapper(cfg);
             var mapped = mapper.Map<PostCommentDTO>(data);
             return mapped;
+        }
+
+        //comment count by 
+        public static int GetCommentCountByUser(string commentedBy)
+        {
+            var posts = DataAccessFactory.PostData().Read();
+            return posts
+                .SelectMany(p => p.Comments)       
+                .Count(c => c.CommentedBy == commentedBy);
         }
     }
 }
