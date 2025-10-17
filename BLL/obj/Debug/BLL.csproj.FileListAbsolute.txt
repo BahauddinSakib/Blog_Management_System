@@ -1,0 +1,17 @@
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\BLL.dll.config
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\BLL.dll
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\BLL.pdb
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\DAL.dll
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\EntityFramework.dll
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\DAL.pdb
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\DAL.dll.config
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\EntityFramework.xml
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\Blog_Management_System\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\ASP.NET\Blog_Management_System\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\ASP.NET\Blog_Management_System\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\ASP.NET\Blog_Management_System\BLL\obj\Debug\BLL.dll
+D:\ASP.NET\Blog_Management_System\BLL\obj\Debug\BLL.pdb
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\AutoMapper.dll
+D:\ASP.NET\Blog_Management_System\BLL\bin\Debug\AutoMapper.xml
